@@ -1,0 +1,9 @@
+function suma()
+{
+
+      var num1=Number(document.getElementtByid('nu1').value);
+      var num2=Number(document.getElementtByid('nu2').value);
+      var res=num1+num2;
+      document.getElementByid('res').value=res;
+}
+       
