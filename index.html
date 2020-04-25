@@ -119,11 +119,34 @@
     document.getElementById("resultado").value = resultado 
     }
     </script>
+    <script>
+     function dividir(){
+        //se captura los valores de los inputs y se almacenan en variables
+    var a = document.getElementById("a").value;
+    var b = document.getElementById("b").value;
 
+    //se define la varible resultado
+    var resultado;
 
- 
+    //verificación de las variables si son cadenas vacías
+    if(a == ""){
+       a = 0; 
+    }else{
+        a= parseInt(a);
     }
-</script>
+
+    if(b == ""){
+       b = 0; 
+    }else{
+        b= parseInt(b);
+    }
+
+    //ejecuto la división de las variables
+    resultado = a / b;
+
+     //muestro el resultado de la suma en el navegador 
+    document.getElementById("resultado").value = resultado
+ }</script>
 </body>
 <head>
 </html>
